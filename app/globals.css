@@ -71,6 +71,12 @@ body {
   backdrop-filter: blur(20px);
 }
 
+.glass-card {
+  background: rgba(22, 26, 33, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(69, 72, 79, 0.15);
+}
+
 .tonal-shift-glass {
   background: rgba(15, 19, 26, 0.6);
   backdrop-filter: blur(12px);
@@ -83,4 +89,8 @@ body {
 /* Gradients */
 .bg-gradient-primary {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-container) 100%);
+}
+
+.timeline-line {
+  background: linear-gradient(to bottom, #afa2ff 0%, #00cffc 50%, #ff9ec7 100%);
 }

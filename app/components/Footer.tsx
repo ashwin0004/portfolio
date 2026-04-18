@@ -1,21 +1,21 @@
 "use client";
 
+import { portfolioData } from "../data/portfolio";
+
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
-  
+  const { personal } = portfolioData;
+
   return (
-    <footer className="border-t border-white/5 bg-black py-12">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-          <p className="text-xs text-zinc-500 uppercase tracking-widest" suppressHydrationWarning>
-            © {currentYear} ASHWIN BIJU. BUILT WITH DESIGN-FIRST PRINCIPLES.
-          </p>
-          
-          <div className="flex items-center gap-8">
-            <a href="#" className="text-xs font-bold text-zinc-500 transition-colors hover:text-white uppercase tracking-widest">GitHub</a>
-            <a href="#" className="text-xs font-bold text-zinc-500 transition-colors hover:text-white uppercase tracking-widest">LinkedIn</a>
-            <a href="#" className="text-xs font-bold text-zinc-500 transition-colors hover:text-white uppercase tracking-widest">Twitter</a>
-          </div>
+    <footer className="py-12 border-t border-outline-variant/10 px-6">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-on-surface-variant text-sm">
+        <div>
+          <p>© {new Date().getFullYear()} {personal.name}. All rights reserved.</p>
+        </div>
+        <div className="flex gap-8">
+          <a href={personal.github} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">GitHub</a>
+          <a href={personal.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">LinkedIn</a>
+          <a href={personal.twitter} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Twitter</a>
+          <a href="/contact" className="hover:text-primary transition-colors">Contact</a>
         </div>
       </div>
     </footer>

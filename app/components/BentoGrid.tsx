@@ -1,7 +1,8 @@
 import Image from "next/image";
+import { portfolioData } from "../data/portfolio";
 
 export default function BentoGrid() {
-  const stack = ["React", "Next.js", "Tailwind CSS", "TypeScript", "Figma", "Three.js", "GSAP"];
+  const { bento } = portfolioData.about;
 
   return (
     <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-32">
@@ -12,16 +13,16 @@ export default function BentoGrid() {
             <span className="material-symbols-outlined text-3xl">school</span>
             <span className="font-bold tracking-widest uppercase text-xs">Foundation</span>
           </div>
-          <h3 className="text-3xl font-bold mb-4">BCA at Kannur University</h3>
+          <h3 className="text-3xl font-bold mb-4">{bento.education.title}</h3>
           <p className="text-on-surface-variant max-w-md">
-            Built the logical backbone through rigorous Computer Application studies. My journey from algorithmic thinking to visual implementation started here, translating abstract logic into human-centric interfaces.
+            {bento.education.description}
           </p>
         </div>
         <div className="absolute right-0 bottom-0 w-1/2 h-full opacity-20 pointer-events-none">
           <Image 
             alt="Abstract architectural lines" 
             className="object-cover" 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuADpx7GXoX-3Jhp6PjpSwi5Aof2PkUM_yBS5dFaYY_lajNq5GFBOSm0CncVszZutwcV3DaNQQF9VvQGiWZBavju71xZHUiSkYKNb2-xdn6LDf9OBYS8RNAbTNEqIQYo4FOKISFShc9VqLaWwMXMULI-YrGNKBFW_nGnraPZRx7EphXLHFpI5p8pF2hwIwclIbTx9fzFS0RcFpkvj0AbbFQncsTLho8XAJbykoSRDmyXLn8Dczg9ed7ZoyzfwGzKM6Rd4X_OXx2usN0"
+            src={bento.education.image}
             fill
             unoptimized
           />
@@ -35,7 +36,7 @@ export default function BentoGrid() {
         </div>
         <h3 className="text-xl font-bold mb-6">Core Arsenal</h3>
         <div className="flex flex-wrap gap-2">
-          {stack.map((item) => (
+          {bento.arsenal.map((item) => (
             <span key={item} className="px-3 py-1 bg-surface-container-highest text-on-surface-variant text-xs rounded-full font-medium">
               {item}
             </span>
@@ -59,16 +60,16 @@ export default function BentoGrid() {
             <Image 
               alt="Macro light prism" 
               className="rounded-lg grayscale hover:grayscale-0 transition-all duration-700 object-cover" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkyXJ0WE_AbYKziCkqmmc35FvOeuHRpw1RUZzuouJ-3jNlvCtwUXrxtKXQbzQZ9pc35VwemJQ0L1urF0G4LIaHx_3l22cNOPgWsemuciPycEEL7zmyAwKaaPxvnT_rx3d6h1LynwNsido2x8CeRjzJXlcCzU_mfaf0ye40JmEWvOZahiS4RQ2dmaGZ0-d2E8yse899-B8bYWU3wegObZkhShYo9ar4LDxvUlsgqqqGC0zWZFwwGmg-leCk_eHwRjameokFOCJS3CA"
+              src={bento.philosophy.image}
               fill
               unoptimized
             />
           </div>
           <div className="flex-1">
             <span className="material-symbols-outlined text-tertiary mb-4">palette</span>
-            <h3 className="text-2xl font-bold mb-4">The Obsidian Flux</h3>
+            <h3 className="text-2xl font-bold mb-4">{bento.philosophy.title}</h3>
             <p className="text-on-surface-variant leading-relaxed">
-              Design is the bridge between functionality and emotion. I believe in interfaces that feel invisible yet essential—leveraging light, depth, and intentional whitespace to guide users through complex data landscapes.
+              {bento.philosophy.description}
             </p>
           </div>
         </div>
