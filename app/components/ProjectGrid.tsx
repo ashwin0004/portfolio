@@ -65,9 +65,14 @@ export default function ProjectGrid() {
                   }
                   if (link.fill) {
                     return (
-                      <button key={idx} className="px-8 py-3 bg-white text-black font-bold rounded-lg transition-transform active:scale-95">
+                      <a 
+                        key={idx} 
+                        href={link.href}
+                        className="px-8 py-3 bg-white text-black font-bold rounded-lg transition-transform active:scale-95 inline-flex items-center gap-2"
+                      >
+                        {link.icon && <span className="material-symbols-outlined text-sm">{link.icon}</span>}
                         {link.label}
-                      </button>
+                      </a>
                     );
                   }
                   return (

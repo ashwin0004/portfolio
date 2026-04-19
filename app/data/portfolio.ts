@@ -194,39 +194,70 @@ export const portfolioData = {
     list: [
       {
         id: 1,
-        title: "Portfolio Website",
-        description: "A high-end editorial showcase designed to break the standard developer template. Leveraging intentional asymmetry and glassmorphism to create a professional gallery of engineering mastery.",
-        tags: ["React.js", "Tailwind CSS", "Framer Motion"],
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCozTLQFzo2rzYvHy62UFKH-AL1hH4VpIfavo3bvU_pLXvZdXQcL3aEuwNoPakpHPd8plzNTfTw0J5EsX9FhVzLsqagyt5zD7VRz4sbEQllIXY_Pm_O-HgUgHg9IhxwCLScyiLs20f8DUEzohAnF5w03zerN2tOspCwZg4na-8Uly8ezNl3JD7bQZCWrsEsRsNJC5oOcwcmAZyzgQBap5VF_-pr160x8Om2yBekSCd8AmN51ZxzLvKeMsreoRsH8nzqoFLg4EimGtY",
+        title: "Doc Tutorial Platform",
+        description: "A modular documentation hub designed for structured learning. Focused on high-performance content delivery and scalable frontend architecture using TypeScript.",
+        tags: ["TypeScript", "Next.js", "Tailwind CSS"],
+        image: "/projects/doc-tutorial.png",
         colSpan: "md:col-span-8",
         links: [
-          { label: "Live Demo", icon: "arrow_forward", href: "#", primary: true },
-          { label: "GitHub", icon: "code", href: "#" }
+          { label: "GitHub", icon: "code", href: "https://github.com/ashwin0004/doc-tutorial", primary: true }
         ]
       },
       {
         id: 2,
-        title: "UI/UX Design Projects",
-        description: "Explorations in human-centric digital interfaces, focusing on accessibility, micro-interactions, and visual storytelling across mobile platforms.",
-        tags: ["Figma", "Prototyping"],
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAfutCXWaxlw1OVVhLiMA139C5oTY_FSUj76okniRRwmze58uFeME1A0fO5h6ucIPV68LnF5OmRa-UXrxKt5do8xMEHWqA4f9Ww_B01f-unVlo2McL9DrrngAJPFHYh_Dkvk88blY2EuU-kdi4h9hRK54dK9_Kc0CsidBOoDhcGI2nEKil6D431FZauv1v9uRzGezvkRFSsJ_4EoNGfpcqv73J7k7IP3rBXo9rXNTi7e0ex0f6PoenTTKgJIDYw3kP9-ZGpkG-4j6Q",
+        title: "Service Booking Platform",
+        description: "A full-stack service booking application allowing users to browse, schedule, and manage appointments. Features an integrated admin dashboard for service control and real-time availability tracking.",
+        tags: ["Next.js", "Full Stack", "Authentication"],
+        image: "/projects/service-booking.png",
         colSpan: "md:col-span-4",
         links: [
-          { label: "View Case Study", href: "#", button: true },
-          { label: "Behance Gallery", href: "#", underline: true }
+          { label: "GitHub", icon: "code", href: "https://github.com/ashwin0004/Service-booking" }
         ]
       },
       {
         id: 3,
-        title: "Dynamic Web Application",
-        description: "A real-time data orchestration platform featuring live analytics, encrypted communication channels, and a modular widget architecture. Engineered for high-throughput performance and seamless user feedback loops.",
-        tags: ["Full Stack", "Next.js 14", "PostgreSQL", "Prisma"],
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuD6M2VWsZA6Q4IYk8sFya0ZTiJduEYblOR_6I9ZIznc_A_jLnhd47wOBVffytuIytevW4sjFRcPmaHuTTEah5LJ6i9wEQvjywvaGRatmjOpwMTdDmTMBKqN_Mk_qN451vLzmJBtxt2w_T3111qw2ZXOIVn86NSCH9XJebeIFtHFqtkWUodNKyiTb1qwmc-BzzYE2bsNqCBhhsExdesfgUYgi1troRP9s7xrsIneNRnzFFHakW61tPeVGBfyTsLvl0Iaak4F2qBP-3E",
+        title: "Car Wash Booking System",
+        description: "Comprehensive appointment management system featuring automated scheduling, customer tracking, and a robust admin interface for service optimization. Engineered for seamless business operations.",
+        tags: ["Next.js", "Full Stack", "Booking Engine"],
+        image: "/projects/car-wash.png",
         colSpan: "md:col-span-12",
         fullWidth: true,
         links: [
-          { label: "Launch App", href: "#", fill: true },
-          { label: "View Source on GitHub", icon: "terminal", href: "#", secondary: true }
+          { label: "GitHub", icon: "code", href: "https://github.com/ashwin0004/car-wash", fill: true }
+        ]
+      },
+      {
+        id: 4,
+        title: "Ecommerce Platform",
+        description: "A high-performance marketplace featuring real-time state management, secure Firebase authentication, and an interactive checkout experience. Built for speed and conversion.",
+        tags: ["React", "Redux Toolkit", "Firebase"],
+        image: "/projects/ecommerce.png",
+        colSpan: "md:col-span-4",
+        links: [
+          { label: "GitHub", icon: "code", href: "https://github.com/ashwin0004/Ecommerce" }
+        ]
+      },
+      {
+        id: 5,
+        title: "Rockstar Game Website Clone",
+        description: "A visually rich gaming website clone inspired by Rockstar Games. Developed with a focus on immersive UI, fluid animations, and high-performance asset loading to deliver a premium user experience.",
+        tags: ["HTML", "Tailwind CSS", "JavaScript"],
+        image: "/projects/rockstar.png",
+        colSpan: "md:col-span-8",
+        links: [
+          { label: "View on GitHub", icon: "code", href: "https://github.com/ashwin0004/Rockstar-game-website", primary: true }
+        ]
+      },
+      {
+        id: 6,
+        title: "React Auth Framework",
+        description: "A security-first authentication system implementing JWT-based token handling, protected route orchestration, and persistent session management for modern web applications.",
+        tags: ["React", "JWT Auth", "Axios"],
+        image: "/projects/react-auth.png",
+        colSpan: "md:col-span-12",
+        fullWidth: true,
+        links: [
+          { label: "GitHub", icon: "code", href: "https://github.com/ashwin0004/react-authentication", fill: true }
         ]
       }
     ],
