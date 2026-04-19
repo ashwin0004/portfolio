@@ -1,4 +1,5 @@
 import { MoveRight, Download } from "lucide-react";
+import Link from "next/link";
 import { portfolioData } from "../data/portfolio";
 
 export default function Hero() {
@@ -32,12 +33,19 @@ export default function Hero() {
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
-            <button className="bg-gradient-primary text-on-primary h-12 inline-flex items-center justify-center gap-2 rounded-lg px-6 font-semibold transition-all hover:opacity-90 active:scale-95 shadow-[0_0_20px_rgba(175,162,255,0.3)]">
+            <Link 
+              href="/projects" 
+              className="bg-gradient-primary text-on-primary h-12 inline-flex items-center justify-center gap-2 rounded-lg px-6 font-semibold transition-all hover:opacity-90 active:scale-95 shadow-[0_0_20px_rgba(175,162,255,0.3)]"
+            >
               {hero.cta.primary} <MoveRight className="h-4 w-4" />
-            </button>
-            <button className="inline-flex h-12 items-center justify-center gap-2 rounded-lg border border-outline-variant bg-surface-container px-6 font-semibold text-on-surface transition-all hover:bg-surface-container-high active:scale-95">
+            </Link>
+            <a 
+              href="/resume.pdf" 
+              download 
+              className="inline-flex h-12 items-center justify-center gap-2 rounded-lg border border-outline-variant bg-surface-container px-6 font-semibold text-on-surface transition-all hover:bg-surface-container-high active:scale-95"
+            >
               <Download className="h-4 w-4" /> {hero.cta.secondary}
-            </button>
+            </a>
           </div>
 
           <div className="mt-8 flex items-center gap-6">

@@ -1,18 +1,15 @@
-import Navbar from "../components/Navbar";
 import ExperienceHero from "../components/ExperienceHero";
 import TimelineItem from "../components/TimelineItem";
 import ExperienceHighlights from "../components/ExperienceHighlights";
 import SkillCloud from "../components/SkillCloud";
 import ExperienceInterstitial from "../components/ExperienceInterstitial";
-import Footer from "../components/Footer";
 import { portfolioData } from "../data/portfolio";
 
 export default function ExperiencePage() {
   const { timeline } = portfolioData.experience;
 
   return (
-    <main className="min-h-screen bg-background text-on-surface selection:bg-primary/30 selection:text-primary">
-      <Navbar />
+    <main className="min-h-screen bg-background text-on-surface selection:bg-primary/30 selection:text-primary pt-20">
       
       <ExperienceHero />
       
@@ -34,8 +31,6 @@ export default function ExperiencePage() {
       <ExperienceHighlights />
       <SkillCloud />
       <ExperienceInterstitial />
-
-      <Footer />
     </main>
   );
 }
